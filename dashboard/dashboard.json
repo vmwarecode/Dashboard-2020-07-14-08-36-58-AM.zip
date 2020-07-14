@@ -1,0 +1,631 @@
+{
+   "dashboards": [{
+      "autoswitchDelay": 300,
+      "autoswitchEnabled": false,
+      "autoswitchTabId": "null",
+      "columnCount": 1,
+      "columnProportion": "1",
+      "creationTime": 1572200332652,
+      "dashboardNavigations": {},
+      "description": "",
+      "disabled": false,
+      "gridsterMaxColumns": 12,
+      "hidden": false,
+      "homeTab": false,
+      "id": "a42bcc53-41b2-4a92-b111-d5c4816cc90c",
+      "importAttempts": 0,
+      "importComplete": true,
+      "lastUpdateTime": 1594714785438,
+      "lastUpdateUserId": "37275519-dcc9-47c7-b117-6dbbf4e623ef",
+      "locked": false,
+      "name": "Custom Dashboards/VMware VM Availability",
+      "namePath": "Custom Dashboards",
+      "rank": 0,
+      "shared": false,
+      "states": [],
+      "temporary": false,
+      "userId": "37275519-dcc9-47c7-b117-6dbbf4e623ef",
+      "widgetInteractions": [
+         {
+            "type": "resourceId",
+            "widgetIdProvider": "2bf37b9e-5969-4733-be40-c33fe2016e0b",
+            "widgetIdReceiver": "f5cb8df2-b1ff-46d3-8f5b-a27413c24957"
+         },
+         {
+            "type": "resourceId",
+            "widgetIdProvider": "2bf37b9e-5969-4733-be40-c33fe2016e0b",
+            "widgetIdReceiver": "de839487-7436-4d9e-8e42-9dc3c3e31953"
+         }
+      ],
+      "widgets": [
+         {
+            "collapsed": false,
+            "config": {
+               "additionalColumns": [
+                  {
+                     "boxLabel": "Powered On (1=on, 0=off)",
+                     "metricKey": "sys|poweredOn",
+                     "metricName": "System|Powered ON",
+                     "resourceKindId": "resourceKind:id:0_::_"
+                  },
+                  {
+                     "boxLabel": "Power State",
+                     "metricKey": "summary|runtime|powerState",
+                     "metricName": "Summary|Runtime|Power State",
+                     "resourceKindId": "resourceKind:id:0_::_"
+                  },
+                  {
+                     "boxLabel": "Uptime (seconds)",
+                     "metricKey": "sys|osUptime_latest",
+                     "metricName": "System|OS Uptime",
+                     "resourceKindId": "resourceKind:id:0_::_"
+                  },
+                  {
+                     "boxLabel": "ESXi Host",
+                     "metricKey": "summary|parentHost",
+                     "metricName": "Summary|Parent Host",
+                     "resourceKindId": "resourceKind:id:0_::_"
+                  },
+                  {
+                     "boxLabel": "Cluster",
+                     "metricKey": "summary|parentCluster",
+                     "metricName": "Summary|Parent Cluster",
+                     "resourceKindId": "resourceKind:id:0_::_"
+                  },
+                  {
+                     "boxLabel": "Datacenter",
+                     "metricKey": "summary|parentDatacenter",
+                     "metricName": "Summary|Parent Datacenter",
+                     "resourceKindId": "resourceKind:id:0_::_"
+                  },
+                  {
+                     "boxLabel": "vCenter",
+                     "metricKey": "summary|parentVcenter",
+                     "metricName": "Summary|Parent vCenter",
+                     "resourceKindId": "resourceKind:id:0_::_"
+                  },
+                  {
+                     "boxLabel": "IP",
+                     "metricKey": "summary|guest|ipAddress",
+                     "metricName": "Summary|Guest Operating System|Guest OS IP Address",
+                     "resourceKindId": "resourceKind:id:0_::_"
+                  },
+                  {
+                     "boxLabel": "OS",
+                     "metricKey": "summary|guest|fullName",
+                     "metricName": "Summary|Guest Operating System|Guest OS from Tools",
+                     "resourceKindId": "resourceKind:id:0_::_"
+                  },
+                  {
+                     "boxLabel": "VMware Tools Version",
+                     "metricKey": "summary|guest|toolsVersion",
+                     "metricName": "Summary|Guest Operating System|Tools Version",
+                     "resourceKindId": "resourceKind:id:0_::_"
+                  },
+                  {
+                     "boxLabel": "VMware Tools Status",
+                     "metricKey": "summary|guest|toolsVersionStatus2",
+                     "metricName": "Summary|Guest Operating System|Tools Version Status",
+                     "resourceKindId": "resourceKind:id:0_::_"
+                  },
+                  {
+                     "boxLabel": "VMware Tools Running Status",
+                     "metricKey": "summary|guest|toolsRunningStatus",
+                     "metricName": "Summary|Guest Operating System|Tools Running Status",
+                     "resourceKindId": "resourceKind:id:0_::_"
+                  }
+               ],
+               "customFilter": {
+                  "excludedResources": null,
+                  "filter": [],
+                  "includedResources": null
+               },
+               "depth": 1,
+               "filterMode": "tagPicker",
+               "mode": "all",
+               "refreshContent": {"refreshContent": true},
+               "refreshInterval": 300,
+               "relationshipMode": {"relationshipMode": 0},
+               "resource": [],
+               "selectFirstRow": {"selectFirstRow": true},
+               "selfProvider": {"selfProvider": true},
+               "tagFilter": {
+                  "path": ["/source/kind/kind:resourceKind:id:0_::_"],
+                  "value": {
+                     "adapterInstance": [],
+                     "adapterKind": [],
+                     "bus": [],
+                     "collector": [],
+                     "day": [],
+                     "exclaim": false,
+                     "healthRange": [],
+                     "kind": ["resourceKind:id:0_::_"],
+                     "maintenanceSchedule": [],
+                     "state": [],
+                     "status": [],
+                     "tag": [],
+                     "tier": []
+                  }
+               },
+               "title": "VMs"
+            },
+            "gridsterCoords": {
+               "h": 5,
+               "w": 12,
+               "x": 1,
+               "y": 21
+            },
+            "height": 267,
+            "id": "f5cb8df2-b1ff-46d3-8f5b-a27413c24957",
+            "states": [{
+               "key": "permResGrid_widget_a42bcc53-41b2-4a92-b111-d5c4816cc90c_f5cb8df2-b1ff-46d3-8f5b-a27413c24957",
+               "value": "o%3Acolumns%3Da%253Ao%25253Aid%25253Ds%2525253Ah1%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah2%25255Ewidth%25253Dn%2525253A363.3984375%255Eo%25253Aid%25253Ds%2525253Ah3%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah4%25255Ehidden%25253Db%2525253A1%255Eo%25253Aid%25253Ds%2525253Ah5%25255Ehidden%25253Db%2525253A1%255Eo%25253Aid%25253Ds%2525253Ah6%25255Ehidden%25253Db%2525253A1%255Eo%25253Aid%25253Ds%2525253Ah7%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah8%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah9%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah10%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah11%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah12%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah13%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah14%25255Ehidden%25253Db%2525253A1%255Eo%25253Aid%25253Ds%2525253Ah15%25255Ehidden%25253Db%2525253A1%255Eo%25253Aid%25253Ds%2525253Ah16%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253AresourceRating%25255Ehidden%25253Db%2525253A1%255Eo%25253Aid%25253Ds%2525253Ah25%25255Ehidden%25253Db%2525253A0%25255Ewidth%25253Dn%2525253A112.8671875%255Eo%25253Aid%25253Ds%2525253Ah26%25255Ehidden%25253Db%2525253A0%25255Ewidth%25253Dn%2525253A346.654296875%255Eo%25253Aid%25253Ds%2525253Ah18%25255Ehidden%25253Db%2525253A0%25255Ewidth%25253Dn%2525253A204.517578125%255Eo%25253Aid%25253Ds%2525253Ah19%25255Ehidden%25253Db%2525253A0%25255Ewidth%25253Dn%2525253A114.02734375%255Eo%25253Aid%25253Ds%2525253Ah20%25255Ehidden%25253Db%2525253A0%25255Ewidth%25253Dn%2525253A138.296875%255Eo%25253Aid%25253Ds%2525253Ah21%25255Ehidden%25253Db%2525253A0%25255Ewidth%25253Dn%2525253A275.419921875%255Eo%25253Aid%25253Ds%2525253Ah22%25255Ehidden%25253Db%2525253A0%25255Ewidth%25253Dn%2525253A145.083984375%255Eo%25253Aid%25253Ds%2525253Ah23%25255Ehidden%25253Db%2525253A0%25255Ewidth%25253Dn%2525253A150.4140625%255Eo%25253Aid%25253Ds%2525253Ah24%25255Ehidden%25253Db%2525253A0%25255Ewidth%25253Dn%2525253A105.09375%255Eo%25253Aid%25253Ds%2525253Ah27%25255Ehidden%25253Db%2525253A0%25255Ewidth%25253Dn%2525253A179.73828125%255Eo%25253Aid%25253Ds%2525253Ah29%25255Ehidden%25253Db%2525253A0%25255Ewidth%25253Dn%2525253A222.4765625%255Eo%25253Aid%25253Ds%2525253Ah28%25255Ehidden%25253Db%2525253A0%25255Ewidth%25253Dn%2525253A210.541015625%255Eo%25253Aid%25253Ds%2525253Ah30%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah31%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah32%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah33%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah34%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah35%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah36%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah37%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah38%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah39%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah40%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah41%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah42%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah43%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah44%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah45%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah46%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah47%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%5EstoreState%3Do%253Asorters%253Da%25253Ao%2525253Aroot%2525253Ds%252525253Adata%2525255Eproperty%2525253Ds%252525253AmetricValue_%252525253A%252525253A_sys%252525257CosUptime_latest%2525255Edirection%2525253Ds%252525253AASC%2525255Eid%2525253Ds%252525253AmetricValue_%252525253A%252525253A_sys%252525257CosUptime_latest"
+            }],
+            "title": "VMs",
+            "type": "ResourceList"
+         },
+         {
+            "collapsed": false,
+            "config": {
+               "configs": [{
+                  "attributeKind": {"value": ""},
+                  "color": {
+                     "maxValue": 1,
+                     "minValue": 0,
+                     "thresholds": {
+                        "colors": [
+                           "#FF0000",
+                           "#FFFF00",
+                           "#00FF00"
+                        ],
+                        "values": [
+                           0,
+                           50,
+                           100
+                        ]
+                     }
+                  },
+                  "colorBy": {
+                     "metricKey": "sys|poweredOn",
+                     "value": "System|Powered ON"
+                  },
+                  "filterMode": "tagPicker",
+                  "focusOnGroups": true,
+                  "groupBy": {
+                     "id": "004null002006VMWAREClusterComputeResource",
+                     "parentId": "VMWARE",
+                     "parentText": "vCenter Adapter",
+                     "text": "Cluster Compute Resource",
+                     "type": "resourceKind",
+                     "typeId": "resourceKind:id:1_::_"
+                  },
+                  "mode": {"mode": false},
+                  "name": "Powered ON",
+                  "relationalGrouping": false,
+                  "resourceKind": "resourceKind:id:0_::_",
+                  "sizeBy": {
+                     "metricKey": null,
+                     "value": ""
+                  },
+                  "solidColoring": false,
+                  "tagFilter": null,
+                  "thenBy": null
+               }],
+               "depth": 10,
+               "mode": "all",
+               "refreshContent": {"refreshContent": true},
+               "refreshInterval": 300,
+               "relationshipMode": {"relationshipMode": [
+                  1,
+                  -1,
+                  0
+               ]},
+               "resource": [],
+               "selfProvider": {"selfProvider": true},
+               "title": "VMs Powered ON by Cluster (Green=Powered ON, Red=Powered OFF)",
+               "value": 0
+            },
+            "gridsterCoords": {
+               "h": 11,
+               "w": 6,
+               "x": 1,
+               "y": 10
+            },
+            "height": 609,
+            "id": "68bec605-3522-4d5c-9650-4bcfabb87fe1",
+            "states": [
+               {
+                  "key": "perm_HeatMap_widget_a42bcc53-41b2-4a92-b111-d5c4816cc90c_68bec605-3522-4d5c-9650-4bcfabb87fe1",
+                  "value": "o%3A"
+               },
+               {
+                  "key": "perm_toolbarVisible_widget_a42bcc53-41b2-4a92-b111-d5c4816cc90c_68bec605-3522-4d5c-9650-4bcfabb87fe1",
+                  "value": "b%3A0"
+               }
+            ],
+            "title": "VMs Powered ON by Cluster (Green=Powered ON, Red=Powered OFF)",
+            "type": "Heatmap"
+         },
+         {
+            "collapsed": false,
+            "config": {
+               "alertAction": [],
+               "alertImpact": [],
+               "criticalityLevel": [],
+               "customFilter": {
+                  "excludedResources": null,
+                  "filter": [],
+                  "includedResources": null
+               },
+               "depth": 1,
+               "filterMode": "tagPicker",
+               "mode": "all",
+               "refreshContent": {"refreshContent": true},
+               "refreshInterval": 300,
+               "relationshipMode": {"relationshipMode": [
+                  -1,
+                  0
+               ]},
+               "resource": [],
+               "selfProvider": {"selfProvider": true},
+               "state": [],
+               "status": [0],
+               "tagFilter": {
+                  "path": ["/source/kind/kind:resourceKind:id:0_::_"],
+                  "value": {
+                     "adapterInstance": [],
+                     "adapterKind": [],
+                     "bus": [],
+                     "collector": [],
+                     "day": [],
+                     "exclaim": false,
+                     "healthRange": [],
+                     "kind": ["resourceKind:id:0_::_"],
+                     "maintenanceSchedule": [],
+                     "state": [],
+                     "status": [],
+                     "tag": [],
+                     "tier": []
+                  }
+               },
+               "title": "All Active VM Alerts (including VM Down Alerts)",
+               "type": []
+            },
+            "gridsterCoords": {
+               "h": 9,
+               "w": 6,
+               "x": 1,
+               "y": 1
+            },
+            "height": 495,
+            "id": "2bf37b9e-5969-4733-be40-c33fe2016e0b",
+            "states": [
+               {
+                  "key": "permDateFilter_widget_a42bcc53-41b2-4a92-b111-d5c4816cc90c_2bf37b9e-5969-4733-be40-c33fe2016e0b",
+                  "value": "s%3A%7B%22dateRange%22%3A%22last30Days%22%2C%22dateFrom%22%3Anull%2C%22dateTo%22%3Anull%2C%22timeFrom%22%3Anull%2C%22timeTo%22%3Anull%7D"
+               },
+               {
+                  "key": "permViewMode_widget_a42bcc53-41b2-4a92-b111-d5c4816cc90c_2bf37b9e-5969-4733-be40-c33fe2016e0b",
+                  "value": "s%3Atime"
+               },
+               {
+                  "key": "permAlertGrid_perm_widget_a42bcc53-41b2-4a92-b111-d5c4816cc90c_2bf37b9e-5969-4733-be40-c33fe2016e0b",
+                  "value": "o%3Acolumns%3Da%253Ao%25253Aid%25253Ds%2525253Ah1%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah2%255Eo%25253Aid%25253Ds%2525253Ah15%25255Ehidden%25253Db%2525253A0%255Eo%25253Aid%25253Ds%2525253Ah6%255Eo%25253Aid%25253Ds%2525253Ah3%25255Ewidth%25253Dn%2525253A462.619140625%255Eo%25253Aid%25253Ds%2525253Ah4%25255Ewidth%25253Dn%2525253A299.14453125%255Eo%25253Aid%25253Ds%2525253Ah5%255Eo%25253Aid%25253Ds%2525253Ah7%25255Ehidden%25253Db%2525253A1%255Eo%25253Aid%25253Ds%2525253Ah8%25255Ehidden%25253Db%2525253A1%255Eo%25253Aid%25253Ds%2525253Ah9%25255Ehidden%25253Db%2525253A1%255Eo%25253Aid%25253Ds%2525253Ah10%25255Ehidden%25253Db%2525253A1%255Eo%25253Aid%25253Ds%2525253Ah11%25255Ehidden%25253Db%2525253A1%255Eo%25253Aid%25253Ds%2525253Ah12%25255Ehidden%25253Db%2525253A1%255Eo%25253Aid%25253Ds%2525253Ah13%25255Ehidden%25253Db%2525253A1%255Eo%25253Aid%25253Ds%2525253Ah14%25255Ehidden%25253Db%2525253A1%5EstoreState%3Do%253Asorters%253Da%25253Ao%2525253Aroot%2525253Ds%252525253Adata%2525255Eproperty%2525253Ds%252525253AstartTimeUtc%2525255Edirection%2525253Ds%252525253ADESC%2525255Eid%2525253Ds%252525253AstartTimeUtc"
+               }
+            ],
+            "title": "All Active VM Alerts (including VM Down Alerts)",
+            "type": "AlertList"
+         },
+         {
+            "collapsed": false,
+            "config": {
+               "configs": [{
+                  "attributeKind": {"value": ""},
+                  "color": {
+                     "maxValue": 300,
+                     "minValue": 0,
+                     "thresholds": {
+                        "colors": [
+                           "#FF0000",
+                           "#FFFF00",
+                           "#00FF00"
+                        ],
+                        "values": [
+                           0,
+                           50,
+                           100
+                        ]
+                     }
+                  },
+                  "colorBy": {
+                     "metricKey": "sys|osUptime_latest",
+                     "value": "System|OS Uptime"
+                  },
+                  "filterMode": "tagPicker",
+                  "focusOnGroups": true,
+                  "groupBy": {
+                     "id": "004null002006VMWAREClusterComputeResource",
+                     "originalText": "Cluster Compute Resource",
+                     "parentId": "VMWARE",
+                     "parentText": "vCenter Adapter",
+                     "text": "Cluster Compute Resource",
+                     "type": "resourceKind",
+                     "typeId": "resourceKind:id:1_::_"
+                  },
+                  "mode": {"mode": false},
+                  "name": "OS Uptime",
+                  "relationalGrouping": false,
+                  "resourceKind": "resourceKind:id:0_::_",
+                  "sizeBy": {
+                     "metricKey": null,
+                     "value": ""
+                  },
+                  "solidColoring": false,
+                  "thenBy": null
+               }],
+               "depth": 10,
+               "mode": "all",
+               "refreshContent": {"refreshContent": true},
+               "refreshInterval": 300,
+               "relationshipMode": {"relationshipMode": [
+                  1,
+                  -1,
+                  0
+               ]},
+               "resource": [],
+               "selfProvider": {"selfProvider": true},
+               "title": "VMs OS Uptime by Cluster (Green=up for 15+ minutes, Yellow=up for 10 minutes, Red=up for 5- minutes)",
+               "value": 0
+            },
+            "gridsterCoords": {
+               "h": 11,
+               "w": 6,
+               "x": 7,
+               "y": 10
+            },
+            "height": 609,
+            "id": "5b164995-b150-403b-b1be-cc477e53e113",
+            "states": [{
+               "key": "perm_HeatMap_widget_a42bcc53-41b2-4a92-b111-d5c4816cc90c_5b164995-b150-403b-b1be-cc477e53e113",
+               "value": "o%3A"
+            }],
+            "title": "VMs OS Uptime by Cluster (Green=up for 15+ minutes, Yellow=up for 10 minutes, Red=up for 5- minutes)",
+            "type": "Heatmap"
+         },
+         {
+            "collapsed": false,
+            "config": {
+               "customFilter": {
+                  "excludedResources": null,
+                  "filter": [],
+                  "includedResources": null
+               },
+               "depth": 1,
+               "metric": {
+                  "mode": "resourceKind",
+                  "resourceKindMetrics": [
+                     {
+                        "colorMethod": 1,
+                        "id": "extModel5678-2",
+                        "isStringMetric": true,
+                        "label": "IP",
+                        "metricKey": "summary|guest|ipAddress",
+                        "metricName": "Summary|Guest Operating System|Guest OS IP Address",
+                        "metricUnitId": null,
+                        "orangeBound": null,
+                        "redBound": null,
+                        "resourceKindId": "resourceKind:id:0_::_",
+                        "resourceKindName": "Virtual Machine",
+                        "unit": null,
+                        "yellowBound": null
+                     },
+                     {
+                        "colorMethod": 1,
+                        "id": "extModel5678-1",
+                        "isStringMetric": true,
+                        "label": "OS",
+                        "metricKey": "summary|guest|fullName",
+                        "metricName": "Summary|Guest Operating System|Guest OS from Tools",
+                        "metricUnitId": null,
+                        "orangeBound": null,
+                        "redBound": null,
+                        "resourceKindId": "resourceKind:id:0_::_",
+                        "resourceKindName": "Virtual Machine",
+                        "unit": null,
+                        "yellowBound": null
+                     },
+                     {
+                        "colorMethod": 1,
+                        "id": "extModel6898-1",
+                        "isStringMetric": false,
+                        "label": "OS Uptime",
+                        "metricKey": "sys|osUptime_latest",
+                        "metricName": "System|OS Uptime",
+                        "metricUnitId": "Seconds",
+                        "orangeBound": null,
+                        "redBound": null,
+                        "resourceKindId": "resourceKind:id:0_::_",
+                        "resourceKindName": "Virtual Machine",
+                        "unit": "Seconds",
+                        "yellowBound": null
+                     },
+                     {
+                        "colorMethod": 1,
+                        "id": "extModel6898-2",
+                        "isStringMetric": false,
+                        "label": "Powered ON",
+                        "metricKey": "sys|poweredOn",
+                        "metricName": "System|Powered ON",
+                        "metricUnitId": "1=up, 0=down",
+                        "orangeBound": null,
+                        "redBound": null,
+                        "resourceKindId": "resourceKind:id:0_::_",
+                        "resourceKindName": "Virtual Machine",
+                        "unit": "1=up, 0=down",
+                        "yellowBound": null
+                     },
+                     {
+                        "colorMethod": 1,
+                        "id": "extModel7829-1",
+                        "isStringMetric": true,
+                        "label": "Power State",
+                        "metricKey": "summary|runtime|powerState",
+                        "metricName": "Summary|Runtime|Power State",
+                        "metricUnitId": null,
+                        "orangeBound": null,
+                        "redBound": null,
+                        "resourceKindId": "resourceKind:id:0_::_",
+                        "resourceKindName": "Virtual Machine",
+                        "unit": null,
+                        "yellowBound": null
+                     },
+                     {
+                        "colorMethod": 1,
+                        "id": "extModel5678-8",
+                        "isStringMetric": true,
+                        "label": "ESXi Host",
+                        "metricKey": "summary|parentHost",
+                        "metricName": "Summary|Parent Host",
+                        "metricUnitId": null,
+                        "orangeBound": null,
+                        "redBound": null,
+                        "resourceKindId": "resourceKind:id:0_::_",
+                        "resourceKindName": "Virtual Machine",
+                        "unit": null,
+                        "yellowBound": null
+                     },
+                     {
+                        "colorMethod": 1,
+                        "id": "extModel5678-6",
+                        "isStringMetric": true,
+                        "label": "Cluster",
+                        "metricKey": "summary|parentCluster",
+                        "metricName": "Summary|Parent Cluster",
+                        "metricUnitId": null,
+                        "orangeBound": null,
+                        "redBound": null,
+                        "resourceKindId": "resourceKind:id:0_::_",
+                        "resourceKindName": "Virtual Machine",
+                        "unit": null,
+                        "yellowBound": null
+                     },
+                     {
+                        "colorMethod": 1,
+                        "id": "extModel5678-7",
+                        "isStringMetric": true,
+                        "label": "Datacenter",
+                        "metricKey": "summary|parentDatacenter",
+                        "metricName": "Summary|Parent Datacenter",
+                        "metricUnitId": null,
+                        "orangeBound": null,
+                        "redBound": null,
+                        "resourceKindId": "resourceKind:id:0_::_",
+                        "resourceKindName": "Virtual Machine",
+                        "unit": null,
+                        "yellowBound": null
+                     },
+                     {
+                        "colorMethod": 1,
+                        "id": "extModel5678-9",
+                        "isStringMetric": true,
+                        "label": "vCenter",
+                        "metricKey": "summary|parentVcenter",
+                        "metricName": "Summary|Parent vCenter",
+                        "metricUnitId": null,
+                        "orangeBound": null,
+                        "redBound": null,
+                        "resourceKindId": "resourceKind:id:0_::_",
+                        "resourceKindName": "Virtual Machine",
+                        "unit": null,
+                        "yellowBound": null
+                     },
+                     {
+                        "colorMethod": 1,
+                        "id": "extModel5678-4",
+                        "isStringMetric": true,
+                        "label": "VMware Tools Version",
+                        "metricKey": "summary|guest|toolsVersion",
+                        "metricName": "Summary|Guest Operating System|Tools Version",
+                        "metricUnitId": null,
+                        "orangeBound": null,
+                        "redBound": null,
+                        "resourceKindId": "resourceKind:id:0_::_",
+                        "resourceKindName": "Virtual Machine",
+                        "unit": null,
+                        "yellowBound": null
+                     },
+                     {
+                        "colorMethod": 1,
+                        "id": "extModel5678-5",
+                        "isStringMetric": true,
+                        "label": "VMware Tools Version Status",
+                        "metricKey": "summary|guest|toolsVersionStatus2",
+                        "metricName": "Summary|Guest Operating System|Tools Version Status",
+                        "metricUnitId": null,
+                        "orangeBound": null,
+                        "redBound": null,
+                        "resourceKindId": "resourceKind:id:0_::_",
+                        "resourceKindName": "Virtual Machine",
+                        "unit": null,
+                        "yellowBound": null
+                     },
+                     {
+                        "colorMethod": 1,
+                        "id": "extModel5678-3",
+                        "isStringMetric": true,
+                        "label": "VMware Tools Running Status",
+                        "metricKey": "summary|guest|toolsRunningStatus",
+                        "metricName": "Summary|Guest Operating System|Tools Running Status",
+                        "metricUnitId": null,
+                        "orangeBound": null,
+                        "redBound": null,
+                        "resourceKindId": "resourceKind:id:0_::_",
+                        "resourceKindName": "Virtual Machine",
+                        "unit": null,
+                        "yellowBound": null
+                     }
+                  ],
+                  "resourceMetrics": [],
+                  "subMode": "resourceKindAll"
+               },
+               "refreshContent": {"refreshContent": true},
+               "refreshInterval": 300,
+               "relationshipMode": {"relationshipMode": 0},
+               "resInteractionMode": null,
+               "resource": [],
+               "selfProvider": {"selfProvider": false},
+               "showMetricFullName": {"metricFullName": true},
+               "title": "Property List (for VM in selected Alert)",
+               "visualTheme": 0
+            },
+            "gridsterCoords": {
+               "h": 9,
+               "w": 6,
+               "x": 7,
+               "y": 1
+            },
+            "height": 495,
+            "id": "de839487-7436-4d9e-8e42-9dc3c3e31953",
+            "states": [{
+               "key": "permMetricListDataGrid_metricGrid_widget_a42bcc53-41b2-4a92-b111-d5c4816cc90c_de839487-7436-4d9e-8e42-9dc3c3e31953",
+               "value": "o%3Acolumns%3Da%253Ao%25253Aid%25253Ds%2525253Ah1%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah2%25255Ewidth%25253Dn%2525253A355.5703125%255Eo%25253Aid%25253Ds%2525253Ah3%25255Ewidth%25253Dn%2525253A249.375%255Eo%25253Aid%25253Ds%2525253Ah4%25255Ewidth%25253Dn%2525253A321.76171875"
+            }],
+            "title": "Property List (for VM in selected Alert)",
+            "type": "PropertyList"
+         }
+      ]
+   }],
+   "entries": {"resourceKind": [
+      {
+         "adapterKindKey": "VMWARE",
+         "internalId": "resourceKind:id:0_::_",
+         "resourceKindKey": "VirtualMachine"
+      },
+      {
+         "adapterKindKey": "VMWARE",
+         "internalId": "resourceKind:id:1_::_",
+         "resourceKindKey": "ClusterComputeResource"
+      }
+   ]},
+   "uuid": "de1d6deb-a260-40ab-bb44-fc490502f025"
+}
